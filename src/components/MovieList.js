@@ -11,7 +11,7 @@ export default function MovieList(){
     const [films, setFilms] = useState([])
     const effectFn = () => {
         axios 
-        .get('"https://ghibliapi.herokuapp.com/films"')
+        .get("https://ghibliapi.herokuapp.com/films")
         .then(response => {
             console.log(response)
             setFilms(response.data)
